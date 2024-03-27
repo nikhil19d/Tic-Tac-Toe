@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="left">
+            <div class="title">
+                <h1>TIC TAE TOE</h1>
+            </div>
+            <button type="button" class="start">
+                <h6>START</h6>
+            </button>
+            <div class="details hidden">
+                <div class="p1">
+                    <div class="i1">
+                        <i class="fa-solid fa-xmark" style="color: #e1e1e1;"></i>
+                    </div>
+                    <input type="text" name="player1" placeholder="PLAYER 1" class="pl1" id="pla1">
+                </div>
+                <div class="p2">
+                    <div class="i2">
+                        <i class="fa-solid fa-o" id="i" style="color: #e1e1e1;"></i>
+                    </div>
+                    <input type="text" name="player2" placeholder="PLAYER 2" class="pl2" id="pla2">
+                </div>
+                <div id="start">
+                    <button type="button" class="enter">
+                        <h6>ENTER</h6>
+                    </button>
+                </div>
+            </div>
+            <div class="display hidden">
+                <div id="pl1">
+                    <span class="profile1">
+                        <i class="fa-solid fa-xmark" style="color: #e1e1e1; font-size: 50px"></i>
+                    </span>
+                    <h1 class="pro1"></h1>
+                </div>
+                <div id="pl2">
+                    <span class="profile2">
+                        <i class="fa-solid fa-o" style="color: #e1e1e1; font-size: 50px"></i>
+                    </span>
+                    <h1 class="pro2"></h1>
+                </div>
+                <div class="btn">
+                    <button type="reset" class="reset">
+                        <h6>RESET</h6>
+                    </button>
+                    <button type="button" class="exit">
+                        <h6>EXIT</h6>
+                    </button>
+                </div>
+            </div>
+            <div id="winner" class="hidden">
+                <h1 class="win">WINNER</h1>
+                <h1 class="winName"></h1>
+                <button type="button" class="restart">RESTART</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="welcome">
+                <div class="icon">
+                    <i class="fa-solid fa-caret-left"></i>
+                </div>
+                <div class="text">
+                    <h1 class="f">ENTER</h1>
+                    <h1 class="s">DETAILS</h1>
+                </div>
+            </div>
+            <div class="block">
+                <div id='wish' class="hidden">CONGRAULATIONS!!</div>
+                <div class="hidden" id="con">
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                    <button class="box"></button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="app.js"></script>
+
+</html>
