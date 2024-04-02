@@ -35,7 +35,13 @@ enter.addEventListener('click', () => {
     exit.classList.remove("hidden");
     let play1 = document.getElementsByClassName("pl1")[0].value;
     // let play1 = document.getElementById("pla1").value;
+    if (play1 == "") {
+       play1 = "PLAYER 1"
+    }
     let play2 = document.getElementsByClassName("pl2")[0].value;
+    if (play2 == "") {
+        play2 = "PLAYER 2"
+    }
     // let play2 = document.getElementById("pla2").value;
     console.log(play1, play2);
     let pro1 = document.querySelector(".pro1")
@@ -128,11 +134,17 @@ const winner = () => {
                     windis.setAttribute("class", "winner");
                     restart.setAttribute("class", "restart");
                     let play1 = document.getElementsByClassName("pl1")[0].value;
+                    if (play1 == "") {
+                        play1 = "PLAYER 1"
+                     }
                     document.querySelector(".winName").innerText = `${play1}`;
                     
                 }
                 if (pos1 === attr2) {
                     let play2 = document.getElementsByClassName("pl2")[0].value;
+                    if (play2 == "") {
+                        play2 = "PLAYER 2"
+                    }
                     document.querySelector(".winName").innerText = `${play2}`;
                     windis.setAttribute("class", "winner");
                     restart.setAttribute("class", "restart");
